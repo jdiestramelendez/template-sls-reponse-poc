@@ -1,0 +1,17 @@
+{
+  "name": "slss-offline-lambda-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/cross-env ENGINE=local ./node_modules/.bin/serverless offline start --dontPrintOutput",
+    "deploy": "cross-env SLS_DEBUG=true NODE_ENV=development ENGINE=development ./node_modules/.bin/sls deploy -v --stage development"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "serverless": "^1.63.0",
+    "cross-env": "^6.0.3",
+    "serverless-offline": "^5.12.1"
+  }
+}

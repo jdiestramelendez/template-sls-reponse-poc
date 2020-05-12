@@ -1,0 +1,6 @@
+#set ($errorObj = $util.parseJson($input.path("$.errorMessage")))
+{
+    "success": $errorObj.success,
+    "message": "$errorObj.message",
+    "errors": $errorObj.errors
+}
